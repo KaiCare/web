@@ -10,34 +10,31 @@ interface cardDataType {
     heading: string;
     subheading: string;
     link: string;
+    url: string;
 }
 
 const cardData: cardDataType[] = [
     {
-        imgSrc: '/images/Features/featureOne.svg',
-        heading: "Menu variations",
-        subheading: "Sed ut perspiciatis unde omnis iste natus error",
-        link: 'Learn more'
+        imgSrc: '/images/Cook/mission.svg',
+        heading: "Mission",
+        subheading: "Empowering patients through personalized exercise recommendations, leveraging AI algorithms to enhance physical health and overall quality of life.",
+        link: 'Learn more',
+        url: '/#Mission'
     },
     {
-        imgSrc: '/images/Features/featureTwo.svg',
-        heading: "Cooking warw",
-        subheading: "Sed ut perspiciatis unde omnis iste natus error",
-        link: 'Learn more'
+        imgSrc: '/images/Cook/vision.svg',
+        heading: "Vision",
+        subheading: "At KaiCare, our vision is to revolutionize online physiotherapy by harnessing the power of artificial intelligence, fostering collaboration between patients and physiotherapists, and empowering patients to take control of their well-being.",
+        link: 'Learn more',
+        url: '/#Vision'
     },
     {
-        imgSrc: '/images/Features/featureThree.svg',
-        heading: "Best chef",
-        subheading: "Sed ut perspiciatis unde omnis iste natus error",
-        link: 'Learn more'
-    },
-    {
-        imgSrc: '/images/Features/featureFour.svg',
-        heading: "Fast food",
-        subheading: "Sed ut perspiciatis unde omnis iste natus error",
-        link: 'Learn more'
+        imgSrc: '/images/Cook/values.svg',
+        heading: "Values",
+        subheading: "Compassion, Excellence, Integrity, and Innovation guide our actions at KaiCare, shaping our commitment to patient well-being and the advancement of physiotherapy practice.",
+        link: 'Learn more',
+        url: '/#Values'
     }
-
 ]
 
 const Work = () => {
@@ -46,27 +43,27 @@ const Work = () => {
 
         <div>
             <div className='mx-auto max-w-7xl py-40 px-6' id="about-section">
-                <div className='text-center mb-14' >
+                <div className='text-center mb-20' >
                     <Fade direction={'up'} delay={400} cascade damping={1e-1} triggerOnce={true}>
-                        <h3 className='text-pink text-lg font-normal mb-3 ls-51 uppercase'>Features</h3>
+                        <h1 className="text-4xl lg:text-7xl font-semibold mb-5 text-pink md:4px text-center">
+                            About us
+                        </h1>
                     </Fade>
-                    <Fade direction={'up'} delay={800} cascade damping={1e-1} triggerOnce={true}>
-                        <p className='text-3xl lg:text-5xl font-semibold text-lightgrey'>Get a many of interesting <br /> features.</p>
-                    </Fade>
+
                 </div>
 
 
-                <div className='grid sm:grid-cols-2 lg:grid-cols-4 gap-y-20 gap-x-5 mt-32'>
+                <div className='grid sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-5 mt-32'>
                     <Fade direction={'up'} delay={1000} cascade damping={1e-1} triggerOnce={true}>
                         {cardData.map((items, i) => (
                             <div className='card-b p-8 relative rounded-3xl' key={i}>
-                                <div className='work-img-bg rounded-full flex justify-center absolute top-[-50%] sm:top-[-40%] md:top-[-55%] lg:top-[-45%] left-[0%]'>
-                                    <Image src={items.imgSrc} alt={items.imgSrc} width={510} height={10} />
+                                <div className='work-img-bg rounded-full flex justify-center absolute sm:top-[-40%] md:top-[-40%] lg:top-[-30%] left-[25%]'>
+                                    <Image src={items.imgSrc} alt={items.imgSrc}  width={210} height={1}/>
                                 </div>
                                 <h3 className='text-2xl text-black font-semibold text-center mt-16'>{items.heading}</h3>
                                 <p className='text-lg font-normal text-black text-center text-opacity-50 mt-2'>{items.subheading}</p>
                                 <div className='flex items-center justify-center'>
-                                    <Link href='/'><p className='text-center text-lg font-medium text-pink mt-2 hover-underline'>{items.link}<ChevronRightIcon width={20} height={20} /></p></Link>
+                                    <Link href={items.url}><p className='text-center text-lg font-medium text-pink mt-2 hover-underline'>{items.link}<ChevronRightIcon width={20} height={20} /></p></Link>
                                 </div>
                             </div>
                         ))}

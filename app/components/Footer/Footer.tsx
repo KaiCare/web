@@ -42,13 +42,13 @@ const products: ProductType[] = [
     {
         id: 2,
         section: "Contact",
-        link: ['Help/FAQ', 'Press', 'Affiliates', 'Hotel owners', 'Partners']
+        link: ['Help/FAQ', 'Press', 'Affiliates', 'Partners']
     }
     ,
     {
         id: 3,
         section: "More",
-        link: ['Recipe', 'Chef', 'Food', 'Support']
+        link: [ 'Support']
     }
 ]
 
@@ -64,10 +64,10 @@ const footer = () => {
                     <div className="flex flex-shrink-0 items-center border-right">
                         <Image src="/images/Logo/Logo.svg" alt="logo" width={56} height={56} />
                         <Link href="/" className='text-2xl font-semibold text-black ml-4'>
-                            Chef&apos;s Kitchen.
+                            KAICare
                         </Link>
                     </div>
-                    <h3 className='text-textbl text-xs font-medium mt-5 mb-4 lg:mb-16'> Open an account in minutes, get full financial <br /> control for much longer.</h3>
+                    <h3 className='text-textbl text-xs font-medium mt-5 mb-4 lg:mb-16'> Open an account in minutes and KAI <br /> will help you.</h3>
                     <div className='flex gap-4'>
 
                         {socialLinks.map((items, i) => (
@@ -102,7 +102,7 @@ const footer = () => {
             {/* All Rights Reserved */}
 
             <div className='py-10 md:flex items-center justify-between border-t border-t-bordertop'>
-                <h4 className='text-darkgrey text-sm text-center md:text-start font-normal'>@2023 - Chef&apos;s kitchen. All Rights Reserved by <Link href="https://adminmart.com/" target="_blank"> Adminmart.com</Link></h4>
+                <h4 className='text-darkgrey text-sm text-center md:text-start font-normal'>@2023 - KAICare.</h4>
                 <div className="flex gap-5 mt-5 md:mt-0 justify-center md:justify-start">
                     <h4 className='text-darkgrey text-sm font-normal'><Link href="/" target="_blank">Privacy policy</Link></h4>
                     <div className="h-5 bg-bordertop w-0.5"></div>
