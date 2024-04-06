@@ -1,113 +1,84 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import "slick-carousel/slick/slick.css";
-@import "slick-carousel/slick/slick-theme.css";
 
-* {
-  font-family: 'Poppins', sans-serif;
+html,
+body,
+:root {
+  height: 100%;
 }
-
-html {
-  scroll-behavior: smooth !important;
-}
-
-html:not([data-scroll="0"]) .navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: white;
-  background-blend-mode: overlay;
-  opacity: 1.9;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
-  transition: 0.4s linear;
-  z-index: 3;
-}
-
-.card-b {
-  background: linear-gradient(180deg, #F8F6F6 0%, #F8F6F6 0.01%, rgba(248, 246, 246, 0) 100%);
-}
-
-.ls-51 {
-  letter-spacing: 0.515em;
-}
-
-.br-50 {
-  border-radius: 50px 400px 50px 50px;
-}
-
-@media screen and (max-width: 1200px) {
-  .br-50 {
-    border-radius: 20px;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+ 
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+ 
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+ 
+    --primary: 248 90% 66%;
+    --primary-foreground: 60 9.1% 97.8%;
+ 
+    --secondary: 60 4.8% 95.9%;
+    --secondary-foreground: 24 9.8% 10%;
+ 
+    --accent: 60 4.8% 95.9%;
+    --accent-foreground: 24 9.8% 10%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+ 
+    --ring: 248 90% 66%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 60 9.1% 97.8%;
+ 
+    --muted: 12 6.5% 15.1%;
+    --muted-foreground: 24 5.4% 63.9%;
+ 
+    --popover: 20 14.3% 4.1%;
+    --popover-foreground: 60 9.1% 97.8%;
+ 
+    --card: 20 14.3% 4.1%;
+    --card-foreground: 60 9.1% 97.8%;
+ 
+    --border: 12 6.5% 15.1%;
+    --input: 12 6.5% 15.1%;
+ 
+    --primary: 60 9.1% 97.8%;
+    --primary-foreground: 24 9.8% 10%;
+ 
+    --secondary: 12 6.5% 15.1%;
+    --secondary-foreground: 60 9.1% 97.8%;
+ 
+    --accent: 12 6.5% 15.1%;
+    --accent-foreground: 60 9.1% 97.8%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+ 
+    --ring: 12 6.5% 15.1%;
   }
 }
-
-.footer-icons {
-  transition: .5s;
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
-
-.footer-icons:hover {
-  transform: translateY(-8px);
-}
-
-.footer-icons:hover > .sepiaa {
-  filter: invert(100.10);
-}
-
-.space-links {
-  transition: .3s;
-}
-
-.space-links:hover {
-  letter-spacing: 1px;
-}
-
-.hover-underline {
-  display: inline-flex;
-  position: relative;
-  color: #DF6751;
-  justify-content: center;
-  align-items: center;
-}
-
-.hover-underline:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 1px;
-  bottom: 0;
-  left: 0;
-  background-color: #DF6751;
-  transform-origin: bottom right;
-  transition: transform .25s ease-out;
-}
-
-.hover-underline:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
-
-.w-340px {
-  width: 340px;
-}
-
-.shadow-fi {
-  box-shadow: 0px 28px 42px rgba(0, 0, 0, 0.15);
-}
-
-.inner-img {
-  transition: 0.3s;
-}
-
-.inner-img:hover {
-  transform: scale(1.1);
-}
-
-.par-87{
-  padding-right: 87px;
-}
-
-
-
