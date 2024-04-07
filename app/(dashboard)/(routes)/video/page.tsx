@@ -17,7 +17,7 @@ import { Empty } from "@/components/ui/empty";
 
 
 import { formSchema } from "./constants";
-import { FileVideo } from "lucide-react";
+import { FileVideo, VideoIcon } from "lucide-react";
 
 const VideoPage = () => {
   const router = useRouter();
@@ -55,9 +55,9 @@ const VideoPage = () => {
   return ( 
     <div>
       <Heading
-        title="Video Generation"
-        description="Turn your prompt into video."
-        icon={FileVideo}
+        title="Start Session"
+        description="Let's see how you do the exercise."
+        icon={VideoIcon}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
       />
