@@ -61,8 +61,7 @@ cd server
 python3 Exercise_detector.py
 ```
 
-5. Deploy the app - http://localhost:3000
+5. Deploy the app (in another terminal) - http://localhost:3000
 ```shell
-cd
 npm run dev
 ```
