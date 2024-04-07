@@ -19,10 +19,8 @@ export default async function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en" suppressHydrationWarning>
-        
         <body className={font.className}>
           <ToasterProvider />
-          
           {children}
         </body>
       </html>

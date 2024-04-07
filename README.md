@@ -1,92 +1,45 @@
-# Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023
+# KAICare
+KAICare is a compassionate haven where cutting-edge technology and empathetic care converge. Led by our AI companion, KAI the koala, we empower patients on their healing journey.
 
-![Copy of Copy of Copy of Fullstack Twitter Clone](https://github.com/AntonioErdeljac/next13-ai-saas/assets/23248726/c47e604a-b50b-4eb0-b420-fda20908f522)
+## About the team
+This application has been created by 5 engineers, below you will see our names and roles. 
+- Si Qiang Wu Yang [LinkedIn](https://www.linkedin.com/in/siqiangwu) []() as Computer Vision Developer & Design 
+- 
+
+## Tecnologies
+
+- Tailwind: Design, animations and effects
+- Clerk: Authentication with Google, Apple & MetaMask
+- Web3: Use of authentication through MetaMask
+- MongoDB:
+- AWS: To store the MongoDB instance
+- BKS: 
+- LLM: 
 
 
-
-This is a repository for Build a SaaS AI Platform with Next.js 13, React, Tailwind, Prisma, Stripe | Full Tutorial 2023.
-
-[VIDEO TUTORIAL](https://www.youtube.com/watch?v=ffJ38dBzrlY)
-
-Features:
-
-- Tailwind design
-- Tailwind animations and effects
-- Full responsiveness
-- Clerk Authentication (Email, Google, 9+ Social Logins)
-- Client form validation and handling using react-hook-form
-- Server error handling using react-toast
-- Image Generation Tool (Open AI)
-- Video Generation Tool (Replicate AI)
-- Conversation Generation Tool (Open AI)
-- Music Generation Tool (Replicate AI)
-- Page loading state
-- Stripe monthly subscription
-- Free tier with API limiting
-- How to write POST, DELETE, and GET routes in route handlers (app/api)
-- How to fetch data in server react components by directly accessing database (WITHOUT API! like Magic!)
-- How to handle relations between Server and Child components!
-- How to reuse layouts
-- Folder structure in Next 13 App Router
-
-### Prerequisites
-
-**Node version 18.x.x**
+## Ejecuting the project 
+In order to run the program, the following steps must be performed. 
 
 ### Cloning the repository
-
-```shell
-git clone https://github.com/AntonioErdeljac/next13-ai-saas.git
-```
+~~~
+git clone https://github.com/KaiCare/web.git 
+cd web
+~~~
 
 ### Install packages
-
-```shell
-npm i
-```
+The packages needed to run KAICare are going to be updated and installed using npm
+~~~
+npm install
+~~~
+If the previous command gives an error, it is probably because you do not have npm installed.
 
 ### Setup .env file
-
-
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
-
-OPENAI_API_KEY=
-REPLICATE_API_TOKEN=
-
-DATABASE_URL=
-
-STRIPE_API_KEY=
-STRIPE_WEBHOOK_SECRET=
-
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-```
-
-### Setup Prisma
-
-Add MySQL Database (I used PlanetScale)
-
-```shell
-npx prisma db push
-
-```
+To facilitate the creation of the .env file with the necessary data to run KAICare we have created a configuration.py file that checks if the .env file is already created and if not it creates it with all the necessary information inside. 
+~~~
+python3 configuration.py
+~~~
 
 ### Start the app
-
-```shell
+~~~
 npm run dev
-```
-
-## Available commands
-
-Running commands with npm `npm run [command]`
-
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+~~~

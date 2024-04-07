@@ -12,7 +12,7 @@ const Cook = () => {
                         <h2 className='text-pink text-lg font-normal mb-3 ls-51 uppercase text-start'>About us</h2>
                     </Fade>
                     <Fade direction={'up'} delay={800} cascade damping={1e-1} triggerOnce={true}>
-                        <h3 className="text-3xl lg:text-5xl font-semibold text-black text-start">
+                        <h3 className="mb-5 text-3xl lg:text-5xl font-semibold text-black text-start">
                             Our Vision.
                         </h3>
                     </Fade>
