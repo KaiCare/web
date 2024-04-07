@@ -6,10 +6,10 @@ KAICare is a compassionate haven where cutting-edge technology and empathetic ca
 
 Features:
 - KAI (AI Assistant) - KAI is an AI-powered assistant that helps you with your physical recovery when you need it the most. KAI will guide you through your recovery process, provide you with personalized exercises, and track your progress.
-- Personal Trainer - Computer vision aided agent that corrrects your pose while you are doing your recovery exercises.
+- Personal Trainer - Computer Vision aided agent that corrects your pose while you are doing your recovery exercises.
 
 ## About the team
-This application has been developed by 5 Illinois Institute of Technology engineer graduate students for the Orahacks hackathon that took place on April 2024.
+This application has been developed by 5 Illinois Institute of Technology engineer graduate students for the Orahacks hackathon that took place in April 2024.
 - Si Qiang Wu Yang | [LinkedIn](https://www.linkedin.com/in/siqiangwu) | siqiangwu@gmail.com | Computer Vision Developer & Design 
 - Chenglong (Oskar) Wu Yang | [LinkedIn](https://www.linkedin.com/in/cwuyang) | cwuyang@hawk.iit.edu | Front/Web3 Developer & Design 
 - Mario de Lucas Garcia | [LinkedIn](https://www.linkedin.com/in/mdelucasg) | delucasgarcia.mario@gmail.com | LLM/Front Developer & Design 
@@ -23,12 +23,12 @@ This application has been developed by 5 Illinois Institute of Technology engine
 - **Tailwind**: Design, animations and effects
 - **Clerk**: User Authentication with Google, Apple & MetaMask
 - **Web3**: Use of authentication through MetaMask
-- **Atlas MongoDB**: LLM knowledge storage & vector simmilarity search
+- **Atlas MongoDB**: LLM knowledge storage & vector similarity search
 - **AWS**: Host for the MongoDB cluster
 - **BRX.AI**: LLM deployment
 - **AI**: LLM & Computer Vision 
 
-## Web navegation
+## Web navigation
 The following figure shows the flow possibilities currently configured in KAICare Web
 
 ![Web Navegation](./public/webDiagram)
