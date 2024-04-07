@@ -32,7 +32,7 @@ This application has been developed by 5 Illinois Institute of Technology engine
 ## Web navigation
 The following figure shows the flow possibilities currently configured in KAICare Web
 
-![Web Navegation](./public/webDiagram)
+![Web Navegation](./public/webDiagram.png)
 
 ## Set Up & Deployment
 To run the program, the following steps must be performed. 
@@ -58,6 +58,7 @@ python3 configuration.py
 4. Start Computer Vision model
 ```shell
 cd server
+pip install tensorflow==2.4.1 tensorflow-gpu==2.4.1 opencv-python mediapipe scikit-learn matplotlib testresources
 python3 Exercise_detector.py
 ```
 
