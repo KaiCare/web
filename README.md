@@ -55,8 +55,14 @@ To facilitate the creation of the .env file with the necessary data to run KAICa
 ```shell
 python3 configuration.py
 ```
-
-4. Deploy the app - http://localhost:3000
+4. Start Computer Vision model
 ```shell
+cd server
+python3 Exercise_detector.py
+```
+
+6. Deploy the app - http://localhost:3000
+```shell
+cd
 npm run dev
 ```
