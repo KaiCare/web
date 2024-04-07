@@ -6,7 +6,7 @@ KAICare is a compassionate haven where cutting-edge technology and empathetic ca
 
 Features:
 - KAI (AI Assistant) - KAI is an AI-powered assistant that helps you with your physical recovery when you need it the most. KAI will guide you through your recovery process, provide you with personalized exercises, and track your progress.
-- Personal Trainer - Computer Vision aided agent that corrects your pose while you are doing your recovery exercises.
+- Personal Trainer - Computer Vision-aided agent that corrects your pose while doing your recovery exercises.
 
 ## About the team
 This application has been developed by 5 Illinois Institute of Technology engineer graduate students for the Orahacks hackathon that took place in April 2024.
@@ -14,7 +14,7 @@ This application has been developed by 5 Illinois Institute of Technology engine
 - Chenglong (Oskar) Wu Yang | [LinkedIn](https://www.linkedin.com/in/cwuyang) | cwuyang@hawk.iit.edu | Front/Web3 Developer & Design 
 - Mario de Lucas Garcia | [LinkedIn](https://www.linkedin.com/in/mdelucasg) | delucasgarcia.mario@gmail.com | LLM/Front Developer & Design 
 - Ignacio Gomez Valverde [LinkedIn](https://www.linkedin.com/in/ignacio-gomez-valverde/) | ignacio.gvalverde@gmail.com | DB/LLM Developer & Design 
-- Laura Serrano Velazquez | [LinkedIn](https://www.linkedin.com/in/cwuyang) | lauraserranovelazquez@gmail.com | Front Developer & Design 
+- Laura Serrano Velazquez | [LinkedIn](https://www.linkedin.com/in/lauraserranovelazquez) | lauraserranovelazquez@gmail.com | Front Developer & Design 
 
 ## Technologies
 
@@ -26,7 +26,8 @@ This application has been developed by 5 Illinois Institute of Technology engine
 - **Atlas MongoDB**: LLM knowledge storage & vector similarity search
 - **AWS**: Host for the MongoDB cluster
 - **BRX.AI**: LLM deployment
-- **AI**: LLM & Computer Vision 
+- **AI**: LLM & Computer Vision
+- **AI Framework**: TensorFlow
 
 ## Web navigation
 The following figure shows the flow possibilities currently configured in KAICare Web
@@ -34,7 +35,7 @@ The following figure shows the flow possibilities currently configured in KAICar
 ![Web Navegation](./public/webDiagram)
 
 ## Set Up & Deployment
-In order to run the program, the following steps must be performed. 
+To run the program, the following steps must be performed. 
 
 1. Clone the repository
 ```shell
