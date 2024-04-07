@@ -1,6 +1,4 @@
 import { LandingNavbar } from "@/components/landing-navbar";
-import { LandingHero } from "@/components/landing-hero";
-import { LandingContent } from "@/components/landing-content";
 import Banner from "@/components/banner";
 import Work from "@/components/work";
 import Mission from "@/components/mission";
@@ -14,7 +12,6 @@ export const metadata = {
   title: 'KAICare',
   description: 'KAIcare: Where AI Meets Muscles',
 }
-
 
 const LandingPage = () => {
   return ( 

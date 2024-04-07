@@ -19,7 +19,7 @@ import { cn } from "@/lib/utils";
 import { Loader } from "@/components/loader";
 import { UserAvatar } from "@/components/user-avatar";
 import { Empty } from "@/components/ui/empty";
-import { useProModal } from "@/hooks/use-pro-modal";
+
 
 import { formSchema } from "./constants";
 
@@ -30,7 +30,6 @@ interface ChatCompletionRequestMessage {
 }
 const ConversationPage = () => {
   const router = useRouter();
-  const proModal = useProModal();
   const [messages, setMessages] = useState<ChatCompletionRequestMessage[]>([]);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -53,7 +52,7 @@ const ConversationPage = () => {
       form.reset();
     } catch (error: any) {
       if (error?.response?.status === 403) {
-        proModal.onOpen();
+   
       } else {
         toast.error("Something went wrong.");
       }
@@ -65,7 +64,7 @@ const ConversationPage = () => {
   return ( 
     <div>
       <Heading
-        title="Lets diagnose"
+        title="Let's diagnose"
         description="Hi, I'm Kai. Talk to me and I'll tell you what you can do to get better. ❤️"
         icon={MessageSquare}
         iconColor="text-violet-500"
@@ -105,7 +104,7 @@ const ConversationPage = () => {
                 )}
               />
               <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-                Lets diagnose
+                Let's diagnose
               </Button>
             </form>
           </Form>

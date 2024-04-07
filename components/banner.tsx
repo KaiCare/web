@@ -2,9 +2,7 @@
 import Image from 'next/image';
 import { Fade } from "react-awesome-reveal";
 import Link from 'next/link';
-
 import { useAuth } from "@clerk/nextjs";
-
 
 const Banner = () => {
 
