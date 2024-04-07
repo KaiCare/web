@@ -8,6 +8,7 @@ import Vision from "@/components/vision";
 import Expert from "@/components/expert";
 import Values from "@/components/values";
 import Newsletter from "@/components/newsletter";
+import Footer from "@/components/footer";
 
 export const metadata = {
   title: 'KAICare',
@@ -26,6 +27,7 @@ const LandingPage = () => {
       <Values />
       <Expert />
       <Newsletter />
+      <Footer />
     </div>
    );
 }

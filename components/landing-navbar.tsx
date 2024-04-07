@@ -20,13 +20,13 @@ export const LandingNavbar = () => {
           <Image fill alt="Logo" src="/logo.png" />
         </div>
         <h1 className={cn("text-2xl font-bold text-white", font.className)}>
-          Genius
+          KAICare
         </h1>
       </Link>
       <div className="flex items-center gap-x-2">
         <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-          <Button variant="outline" className="rounded-full">
-            Get Started
+          <Button variant="outline" className="flex border w-full hover:bg-grey md:w-auto mt-5 md:mt-0 border-grey justify-center rounded-full text-xl font-medium items-center py-5 px-10 mr-5 text-grey hover:text-white ">
+            Start
           </Button>
         </Link>
       </div>

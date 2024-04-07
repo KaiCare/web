@@ -1,5 +1,4 @@
 "use client"
-import Slider from "react-slick";
 import React, { Component } from "react";
 import Image from "next/image";
 import { Fade } from "react-awesome-reveal";
@@ -11,7 +10,6 @@ interface DataType {
     name: string;
     imgSrc: string;
 }
-
 
 export default class MultipleItems extends Component {
 
@@ -78,7 +76,7 @@ export default class MultipleItems extends Component {
                         <div className='grid grid-cols-1 lg:grid-cols-12 my-16 space-x-5'>
 
                             <div className='col-span-6 flex justify-start'>
-                                <Image src="/images/Expert/kai.svg" alt="nothing" width={636} height={808} />
+                                <Image src="/kai_expert.svg" alt="nothing" width={636} height={808} />
                             </div>
 
                             <div className='col-span-6 flex flex-col justify-center'>
@@ -110,11 +108,9 @@ export default class MultipleItems extends Component {
                             <p>Remember, I’m not just an AI; I’m your koala confidante. So, let’s hop on this eucalyptus branch of health and well-being! 🌿🌟</p>
                             <p className='text-grey md:text-lg font-normal text-start mt-5'>Disclaimer: Kai is not a licensed physiotherapist, but he’s pretty good at eucalyptus-fueled advice! 😄</p>
                          </Fade>
-
                     </div>
                 </div>
             </div>
-
         );
     }
 }

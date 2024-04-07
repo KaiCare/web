@@ -4,17 +4,15 @@ export const MAX_FREE_COUNTS = 5;
 
 export const tools = [
   {
-    label: 'Conversation',
-    icon: MessageSquare,
-    href: '/conversation',
+    label: 'Ankle Sprain',
+    icon: VideoIcon,
     color: "text-violet-500",
     bgColor: "bg-violet-500/10",
   },
   {
-    label: 'Video Generation',
+    label: 'Cervical Stenosis',
     icon: VideoIcon,
     color: "text-orange-700",
     bgColor: "bg-orange-700/10",
-    href: '/video',
   },
 ];

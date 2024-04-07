@@ -14,21 +14,21 @@ interface cardDataType {
 
 const cardData: cardDataType[] = [
     {
-        imgSrc: '/images/Cook/mission.svg',
+        imgSrc: '/mission.svg',
         heading: "Mission",
         subheading: "Empowering patients through personalized exercise recommendations, leveraging AI algorithms to enhance physical health and overall quality of life.",
         link: 'Learn more',
         url: '/#Mission'
     },
     {
-        imgSrc: '/images/Cook/vision.svg',
+        imgSrc: '/vision.svg',
         heading: "Vision",
         subheading: "At KaiCare, our vision is to revolutionize online physiotherapy by harnessing the power of artificial intelligence, fostering collaboration between patients and physiotherapists, and empowering patients to take control of their well-being.",
         link: 'Learn more',
         url: '/#Vision'
     },
     {
-        imgSrc: '/images/Cook/values.svg',
+        imgSrc: '/values.svg',
         heading: "Values",
         subheading: "Compassion, Excellence, Integrity, and Innovation guide our actions at KaiCare, shaping our commitment to patient well-being and the advancement of physiotherapy practice.",
         link: 'Learn more',

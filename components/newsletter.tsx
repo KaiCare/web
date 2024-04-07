@@ -22,11 +22,11 @@ const Newsletter = () => {
 
                             <div>
                                 <Fade direction={'up'} delay={1200} cascade damping={1e-1} triggerOnce={true}>
-                                    <div className="relative text-white focus-within:text-white flex flex-row-reverse shadow-fi rounded-full">
-                                        <input type="Email address" name="q" className="py-6 sm:py-8 text-sm w-full text-black bg-gray-900 rounded-full pl-4 par-87 focus:outline-none focus:text-black" placeholder="@ enter your email-address" autoComplete="off" />
+                                    <div className="relative flex flex-row-reverse shadow-fi rounded-full">
+                                        <input type="Email address" name="q" className="py-6 sm:py-8 text-sm w-full rounded-full pl-4 par-87 text-white focus:outline-none focus:text-black" placeholder="@ enter your email-address" autoComplete="off" />
                                         <div className="absolute inset-y-0 right-0 flex items-center pr-2">
-                                            <button type="submit" className="p-1 focus:outline-none focus:shadow-outline">
-                                                <Image src={'/images/Newsletter/arrow.svg'} alt="inputicon" width={57} height={71} />
+                                            <button type="submit" className="text-white ">
+                                                <Image src={'/arrow.svg'} alt="inputicon" width={57} height={71} />
                                             </button>
                                         </div>
                                     </div>
@@ -39,7 +39,7 @@ const Newsletter = () => {
                     {/* COLUMN-2 */}
                     <div className="col-span-5 relative hidden md:block">
                         <div>
-                            <Image src={'/images/Newsletter/kai.png'} alt="kaiNew-image" width={626} height={602} className='-mt-24' />
+                            <Image src={'/kai_news.png'} alt="kaiNew-image" width={626} height={602} className='-mt-24' />
                         </div>
                     </div>
 
